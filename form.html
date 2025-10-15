@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 30px;
+    }
+
+    .col-left {
+      flex: 1;
+    }
+
+    .col-right {
+      flex: 1;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- LEFT COLUMN: Form -->
+    <form class="col-left">
+      <label>
+        <div>
+          Username:
+          <input type="text" name="username">
+        </div>
+      </label>
+
+      <label>
+        <div>
+          Password:
+          <input type="password" name="password">
+        </div>
+      </label>
+
+      <label>
+        <div>
+          Email:
+          <input type="email" name="email">
+        </div>
+      </label>
+
+      <label>
+        <div>
+          Gender:
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </div>
+      </label>
+
+      <label>
+        <div>
+          Date of Birth:
+          <input type="date" name="dob">
+        </div>
+      </label>
+
+      <label>
+        <div>
+          Feedback:
+          <textarea name="feedback"></textarea>
+        </div>
+      </label>
+
+      <label>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </label>
+    </form>
+
+    <!-- RIGHT COLUMN: Image -->
+    <aside class="col-right">
+      <img src="Assets/form image.png" width="700" height="600" alt="Form Image">
+    </aside>
+  </div>
+
+</body>
+</html>
